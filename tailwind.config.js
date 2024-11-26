@@ -2,7 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        avocado: ["Avocado", "sans-serif"],
+        avocadobold: ["AvocadoBold", "sans-serif"],
+        veritas: ["Veritas", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
