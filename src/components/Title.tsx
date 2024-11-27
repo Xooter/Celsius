@@ -5,8 +5,12 @@ const Title = () => {
     <div className="flex">
       <div className="flex-col uppercase">
         <div className="flex justify-between">
-          {title.map((letter: string) => {
-            return <h1 className="text-4xl">{letter}</h1>;
+          {title.map((letter: string, i: number) => {
+            return (
+              <h1 key={i} className="text-4xl">
+                {letter}
+              </h1>
+            );
           })}
         </div>
         <h2 className="text-2xl">
