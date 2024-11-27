@@ -25,7 +25,7 @@
 
 @layer components {
   body {
-    @apply bg-light;
+    @apply bg-light scroll-smooth;
   }
 
   h1 {
