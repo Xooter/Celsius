@@ -1,5 +1,5 @@
 import { Item } from "../models/Item";
-import WhatsappIcon from "./HugeIcons/whatsapp-stroke-rounded";
+import TaskAdd02Icon from "./HugeIcons/task-add-02-stroke-rounded";
 
 export const ItemCard = ({ item }: { item: Item }) => {
   const defaultImg =
@@ -8,10 +8,10 @@ export const ItemCard = ({ item }: { item: Item }) => {
   function onItemClick(
     _: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ): void {
-    window.open(
-      `https://wa.me/543513780769?text=Hola!%20Estoy%20interesado%20en%20${item.name}`,
-      "_blank",
-    );
+    // window.open(
+    //   `https://wa.me/543513780769?text=Hola!%20Estoy%20interesado%20en%20${item.name}`,
+    //   "_blank",
+    // );
   }
 
   return (
@@ -26,8 +26,8 @@ export const ItemCard = ({ item }: { item: Item }) => {
         gap-2 px-6  font-medium  text-white transition-all hover:shadow-[0px_3px_0px_black] hover:translate-y-[0px] shadow-none translate-y-[3px]"
         onClick={onItemClick}
       >
-        <WhatsappIcon />
-        <a>Consultar</a>
+        <TaskAdd02Icon />
+        <a>Agregar</a>
       </button>
     </div>
   );
