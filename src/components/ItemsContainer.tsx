@@ -15,12 +15,17 @@ export const ItemsContainer = () => {
     setData(filtered);
   }
   return (
-    <div className="flex-col px-5">
-      <SearchInput className="ml-auto mb-5 mr-2" onChange={onSearch} />
+    <div className="flex-col items-center justify-center w-full px-5">
+      <SearchInput
+        className="mx-auto sm:ml-auto mb-5 sm:mr-2"
+        onChange={onSearch}
+      />
       <div className="flex flex-wrap gap-4 items-center justify-center mx-auto">
-        {data.map((item: Item, i: number) => (
-          <ItemCard item={item} key={i} />
-        ))}
+        {data.length === 0 ? (
+          <h1>No data</h1>
+        ) : (
+          data.map((item: Item, i: number) => <ItemCard item={item} key={i} />)
+        )}
       </div>
     </div>
   );

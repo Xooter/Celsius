@@ -9,7 +9,7 @@ import visa from "../assets/banks/visa-svgrepo-com.svg";
 
 export const Footer = () => {
   return (
-    <footer className="flex items-center justify-between py-5 px-8">
+    <footer className="flex items-center justify-between py-5 px-8 mt-40">
       <div className="flex-col space-y-1">
         <h1>Contact</h1>
         <div className="flex gap-1">
