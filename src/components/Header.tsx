@@ -4,7 +4,7 @@ import Title from "./Title";
 
 export const Header = () => {
   return (
-    <div className="flex items-center justify-between py-5 px-8">
+    <div className="flex flex-col mb-5 sm:mb-0 sm:flex-row items-center justify-between py-5 px-8">
       <Title />
 
       <div className="flex-col space-y-2 mb-auto">

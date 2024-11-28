@@ -17,7 +17,7 @@ export const ItemsContainer = () => {
   return (
     <div className="flex-col items-center justify-center w-full px-5">
       <SearchInput
-        className="mx-auto"
+        className="mx-auto mb-5"
         onChange={onSearch}
         placeholder="Buscar..."
       />
