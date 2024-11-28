@@ -22,7 +22,7 @@ const ConsultPanel = () => {
 
   return (
     selectedItems.length > 0 && (
-      <div className="fixed bottom-2 right-5 bg-white w-1/5 p-5 border-2 border-dark flex-col justify-between gap-4">
+      <div className="fixed bottom-2 right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-5 bg-white w-[90%] lg:w-1/5 p-5 border-2 border-dark flex-col justify-between gap-4">
         <div className="flex justify-between mb-5">
           <div className="flex gap-2">
             <TaskDaily02Icon />
