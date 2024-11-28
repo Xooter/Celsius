@@ -40,7 +40,8 @@
     @apply font-avocado text-dark;
   }
 
-  a {
+  a,
+  p {
     @apply font-veritas text-lg text-dark;
   }
 }

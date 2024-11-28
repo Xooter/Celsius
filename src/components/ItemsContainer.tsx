@@ -17,8 +17,9 @@ export const ItemsContainer = () => {
   return (
     <div className="flex-col items-center justify-center w-full px-5">
       <SearchInput
-        className="mx-auto sm:ml-auto mb-5 sm:mr-2"
+        className="mx-auto"
         onChange={onSearch}
+        placeholder="Buscar..."
       />
       <div className="flex flex-wrap gap-4 items-center justify-center mx-auto">
         {data.length === 0 ? (
