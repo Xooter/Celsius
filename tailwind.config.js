@@ -9,7 +9,7 @@ export default {
           100: "#eeeeee",
         },
         dark: "#222",
-        accent: "#C96868",
+        accent: "#e15050",
       },
       fontFamily: {
         avocado: ["Avocado", "sans-serif"],
