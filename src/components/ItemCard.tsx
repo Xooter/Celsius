@@ -18,10 +18,6 @@ export const ItemCard = ({ item }: { item: Item }) => {
     } else {
       addItem(item);
     }
-    // window.open(
-    //   `https://wa.me/543513780769?text=Hola!%20Estoy%20interesado%20en%20${item.name}`,
-    //   "_blank",
-    // );
   }
 
   return (

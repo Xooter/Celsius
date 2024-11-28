@@ -10,10 +10,18 @@ const ConsultPanel = () => {
   const { removeItem, selectedItems } = useConsult();
   const [isHide, setIsHide] = useState<boolean>(false);
 
-  function onItemClick(
-    _: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): void {
-    throw new Error("Function not implemented.");
+  function onItemClick(): void {
+    if (!selectedItems || selectedItems.length === 0) {
+      return;
+    }
+
+    const itemNames = selectedItems.map((item) => item.name).join("\n -");
+    const message = `Hola! Me podrian dar mas informacion sobre: \n -${itemNames} \n Muchas gracias!`;
+
+    window.open(
+      `https://wa.me/543513780769?text=${encodeURIComponent(message)}`,
+      "_blank",
+    );
   }
 
   function hidePanel(): void {
